@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Entry Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<!-- font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet">
+<link
+    href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Bahianita&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+    <nav>
+        <img src="img/logo-icon-2.png" alt="Bakery Logo" id="logo" />
+        <!-- <h3 id="logo-text">Artisan's Oven</h3> -->
+        <div id="nav-links">
+            <a href="index.html"> Home </a>
+            <a href="javascript:void(0)"> About US </a>
+            <a href="javascript:void(0)"> Contact Us </a>
+            <a href="javascript:void(0)" class="dropdown-link"> Forms </a>
+            <div id="dropdown-nav-links">
+                <a href="customer.html">
+                    <i class="fa fa-user-plus"></i> Add Customer
+                </a>
+                <a href="product.html">
+                    <i class="fa fa-cube"></i> Add Product
+                </a>
+                <a href="category.html">
+                    <i class="fa fa-tags"></i> Add Category
+                </a>
+                <a href="order.html">
+                    <i class="fa fa-shopping-cart"></i> Place Order
+                </a>
+                <a href="supplier.html">
+                    <i class="fa fa-truck"></i> Add Supplier
+                </a>
+                <a href="sale.html">
+                    <i class="fa fa-money"></i> Add Sale
+                </a>
+                <a href="employee.html">
+                    <i class="fa fa-users"></i> Add Employee
+                </a>
+                <a href="inventory.html">
+                    <i class="fa fa-archive"></i> Update Inventory
+                </a>
+            </div>
+        </div>
+
+        <a href="#" class="mobile-drawer"><i class="fa fa-bars"></i></a>
+
+        <div id="mobile-nav">
+            <div id="mobile-nav-header">
+                <img src="img/logo-icon-2.png" alt="Bakery Logo" id="logo" style="visibility: hidden;" />
+                <a href="javascript:void(0)" id="close-mobile-nav"><i class="fa fa-close"></i></a>
+            </div>
+            <a href="index.html"> Home </a>
+            <a href="javascript:void(0)"> About US </a>
+            <a href="javascript:void(0)"> Contact Us </a>
+            <a href="javascript:void(0)" id="mobile-dropdown-link"
+                style="display: flex; justify-content: space-between;"> Forms <i class="fa fa-caret-right"></i></a>
+            <div id="mobile-dropdown-nav-links">
+                <a href="customer.html">
+                    <i class="fa fa-user-plus"></i> Add Customer
+                </a>
+                <a href="product.html">
+                    <i class="fa fa-cube"></i> Add Product
+                </a>
+                <a href="category.html">
+                    <i class="fa fa-tags"></i> Add Category
+                </a>
+                <a href="order.html">
+                    <i class="fa fa-shopping-cart"></i> Place Order
+                </a>
+                <a href="supplier.html">
+                    <i class="fa fa-truck"></i> Add Supplier
+                </a>
+                <a href="sale.html">
+                    <i class="fa fa-money"></i> Add Sale
+                </a>
+                <a href="employee.html">
+                    <i class="fa fa-users"></i> Add Employee
+                </a>
+                <a href="inventory.html">
+                    <i class="fa fa-archive"></i> Update Inventory
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <form action="" method="post">
+            <h1 style="text-align: center;">Product Registration</h1>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price" step="0.01" min="0" required />
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="5" required></textarea>
+
+            <label for="image">Image Url:</label>
+            <input type="text" id="image" name="image" required />
+
+            <label for="category_id">Category ID:</label>
+            <select name="category" id="category">
+                <option value="">(category id)</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+            </select>
+
+            <label for="supplier_id">Supplier ID:</label>
+            <select name="supplier" id="supplier">
+                <option value="">(supplier id)</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
